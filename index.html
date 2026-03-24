@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de Pablo Rafael Santos">
+    <title>Portfólio | Pablo Rafael</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <h1 class="logo">Pablo Rafael Santos</h1>
+
+            <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="menu-tema mobile-only">
+                        <button class="botao-tema" id="botaoTemaMobile" type="button" aria-label="Alternar tema: desligado">
+                            <span class="icon icon-lua" aria-hidden="true">🌙</span>
+                            <span class="switch-chave" aria-hidden="true">
+                                <span class="switch-knob"></span>
+                            </span>
+                            <span class="icon icon-sol" aria-hidden="true">☀️</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="botao-tema desktop-only" id="botaoTema" type="button" aria-label="Alternar tema: desligado">
+                <span class="icon icon-lua" aria-hidden="true">🌙</span>
+                <span class="switch-chave" aria-hidden="true">
+                    <span class="switch-knob"></span>
+                </span>
+                <span class="icon icon-sol" aria-hidden="true">☀️</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="secao destaque">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <p>
+                    Olá! Meu nome é <strong>Pablo Rafael Santos</strong> e este é o meu portfólio pessoal.
+                    Tenho 23 anos, moro em Porteirinha - MG, e sou apaixonado por tecnologia e resolução de
+                    problemas.
+                    <br>
+                    <br>
+                    Atualmente, estou me aprofundando no desenvolvimento de software e tenho um forte interesse na
+                    área
+                    de Quality Assurance (QA).
+
+                    Sou um cara analítico, gosto de entender como as coisas funcionam por baixo dos panos e busco
+                    sempre
+                    otimizar processos.<br></strong><br>
+                </p>
+                <p>
+                    No meu tempo livre, gosto de <strong></strong>ir pra academia</strong>, <strong>passear com meu
+                        cachorro</strong>
+                    e <strong>jogar jogos</strong><br>
+                </p>
+                <p><br>
+                    Meu objetivo profissional é ser um<strong> dev FullStack</strong>.
+                </p>
+            </div>
+        </section>
+
+        <section id="formacao" class="secao">
+            <div class="container">
+                <h2>Formação</h2>
+
+                <div class="card">
+                    <h3>Formação acadêmica</h3>
+                    <p><strong>Curso:</strong> Engenharia de Software</p>
+                    <p><strong>Instituição:</strong> Uninter - Centro Universitário Internacional</p>
+                    <p><strong>Período:</strong> 2025 - 2029</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cursos complementares</h3>
+                    <ul>
+                        <li> Do zero ao profissional - HTML CSS e Javascript | JavaNauta</li>
+                        <li>HTML, CSS, and Javascript for Web Developers | Coursera</li>
+                        <li>Curso Carreira QA: processos e automação de testes | Alura</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Português: Nativo</li>
+                        <li>Inglês: Avançado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="secao destaque">
+            <div class="container">
+                <h2>Portfólio</h2>
+                <p>
+                    Abaixo está um projeto que desenvolvi ao decorrer dos estudos na Uninter.
+                </p>
+
+                <div class="grade-portfolio">
+                    <article class="card projeto">
+                        <h3>Sobre mim</h3>
+                        <p> Esse projeto é o sobre mim, estruturado como um site de página única.
+                            Desenvolvi tudo do zero, utilizando apenas HTML, CSS e JavaScript puros, como parte da
+                            atividade prática da disciplina de Fundamentos da Programação Web do meu curso de Engenharia
+                            de Software.
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            Basicamente, o objetivo do trabalho foi criar uma página que contenha uma seção sobre,
+                            descrever habilidades, hobbies e países que gostaria de visitar.
+                        </p>
+                        <a href="https://sobremim-pied.vercel.app/" target="_blank" rel="noopener noreferrer">Ver
+                            projeto</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Preencha o formulário abaixo para entrar em contato.</p>
+
+                <form id="formContato" class="formulario" novalidate>
+                    <div class="campo-formulario">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                        <small class="erro" id="erroNome"></small>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                        <small class="erro" id="erroEmail"></small>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+                        <small class="erro" id="erroMensagem"></small>
+                    </div>
+
+                    <button type="submit" class="botao-enviar">Enviar mensagem</button>
+                    <p id="mensagemSucesso" class="mensagem-sucesso"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
